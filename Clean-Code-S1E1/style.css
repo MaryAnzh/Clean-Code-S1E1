@@ -26,7 +26,7 @@ body {
   margin: 0 auto 0;
 }
 
-.main__form {
+.main__section {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -140,7 +140,7 @@ button {
   margin: 0 10px;
 }
 
-.main__task-list > label {
+.main__task-list > .main__lable-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
