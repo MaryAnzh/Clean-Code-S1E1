@@ -8,13 +8,13 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.getElementById("form-new-task");//Add a new task.
+var taskInput = document.getElementById("input-new-task");//Add a new task.
 var addButton = document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder = document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
 var completedTasksHolder = document.getElementById("completed-tasks");//completed-tasks
 
 
-//Добавляем новый таск в список дел
+//New task list item
 var createNewTaskElement = function (taskString) {
 
     var listItem = document.createElement("li");
@@ -35,7 +35,7 @@ var createNewTaskElement = function (taskString) {
     var deleteButtonImg = document.createElement("img");//delete button image
 
     label.innerText = taskString;
-    label.classList.add('main__lable-task');
+    label.className = 'main__lable-task';
 
 
     //Each elements, needs appending
@@ -60,9 +60,11 @@ var createNewTaskElement = function (taskString) {
     return listItem;
 }
 
+
+
 var addTask = function () {
     console.log("Add Task...");
-    //Create a new list item with the text from the #form-new-task:
+    //Create a new list item with the text from the #input-new-task:
     if (!taskInput.value) return;
     var listItem = createNewTaskElement(taskInput.value);
 
@@ -85,8 +87,8 @@ var editTask = function () {
 
     var editInput = listItem.querySelector('input[type=text]');
     var label = listItem.querySelector("label");
-    var editBtn = listItem.querySelector(".edit");
-    var containsClass = listItem.classList.contains("editMode");
+    var editBtn = listItem.querySelector(".main__button-edit");
+    var containsClass = listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if (containsClass) {
 
