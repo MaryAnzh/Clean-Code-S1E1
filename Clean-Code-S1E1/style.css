@@ -67,7 +67,7 @@ button {
 
 .main__button-add,
 .main__button-edit,
-.delete {
+.main__button-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -79,7 +79,7 @@ button {
 
 .main__button-add:hover,
 .main__button-edit:hover,
-.delete:hover {
+.main__button-delete:hover {
   color: #3a3A3a;
 }
 
