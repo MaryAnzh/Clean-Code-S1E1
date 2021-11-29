@@ -95,7 +95,8 @@ button {
 }
 
 .input-text,
-.main__input-new-task {
+.main__input-new-task,
+hidden-label {
   margin: 0;
   font-size: 18px;
   line-height: 18px;

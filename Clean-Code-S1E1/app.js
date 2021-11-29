@@ -35,13 +35,13 @@ var createNewTaskElement = function (taskString) {
     var deleteButtonImg = document.createElement("img");//delete button image
 
     label.innerText = taskString;
-    label.className = 'main__lable-task';
+    label.classList.add('main__lable-task');
 
 
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
-    editInput.className = "main__input-text";
+    editInput.classList.add('main__input-text', 'input-text');
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
     editButton.className = "main__button-edit";
@@ -95,9 +95,11 @@ var editTask = function () {
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText = editInput.value;
+        label.classList.remove('hidden-label');
         editBtn.innerText = "Edit";
     } else {
         editInput.value = label.innerText;
+        label.classList.add('hidden-label');
         editBtn.innerText = "Save";
     }
 
