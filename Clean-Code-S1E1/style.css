@@ -95,8 +95,7 @@ button {
 }
 
 .input-text,
-.main__input-new-task,
-hidden-label {
+.main__input-new-task,s {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -163,7 +162,7 @@ hidden-label {
 }
 
 /* Completed */
-.completed-tasks-label {
+.main__completed-tasks {
   text-decoration: line-through;
   color: #888;
 }
