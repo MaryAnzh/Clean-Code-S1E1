@@ -26,7 +26,7 @@ body {
   margin: 0 auto 0;
 }
 
-.section {
+.main__form {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -36,8 +36,8 @@ body {
 
 .task,
 .main__input-new-task,
-.section__lable-task,
-.section__input-text {
+.main__lable-task,
+.main__input-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -66,7 +66,7 @@ button {
 }
 
 .main__button-add,
-.section__button-edit,
+.main__button-edit,
 .delete {
   background: none;
   border: 0px;
@@ -78,13 +78,13 @@ button {
 }
 
 .main__button-add:hover,
-.section__button-edit:hover,
+.main__button-edit:hover,
 .delete:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
-.heading-3,
+.main__heading-3,
 .main__label-new-task {
   color: #333;
   font-weight: 700;
@@ -124,7 +124,7 @@ button {
 }
 
 /* Task list */
-.section__task-list {
+.main__task-list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -133,22 +133,22 @@ button {
   align-items: center;
 }
 
-.section__task-list > * {
+.main__task-list > * {
   vertical-align: middle;
 }
 
-.section__task-list > .section__input-checkbox {
+.main__task-list > .main__input-checkbox {
   margin: 0 10px;
 }
 
-.section__task-list > label {
+.main__task-list > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.section__task-list > .input-text {
+.main__task-list > .input-text {
   width: 226px;
 }
 
