@@ -162,7 +162,7 @@ button {
 }
 
 /* Completed */
-.main__completed-tasks {
+.main__completed-tasks .main__task-list .main__lable-task {
   text-decoration: line-through;
   color: #888;
 }
