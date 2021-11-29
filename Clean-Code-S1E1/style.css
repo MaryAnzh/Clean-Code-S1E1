@@ -34,7 +34,6 @@ body {
   margin-inline-end: 0px;
 }
 
-.task,
 .main__input-new-task,
 .main__lable-task,
 .main__input-text {
@@ -96,7 +95,7 @@ button {
 }
 
 .input-text,
-#new-task {
+.main__input-new-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -119,7 +118,7 @@ button {
   margin: 0 0 20px;
 }
 
-#new-task {
+.main__input-new-task {
   width: 318px;
 }
 
