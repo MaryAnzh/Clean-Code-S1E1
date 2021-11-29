@@ -12,20 +12,12 @@ body {
   text-align: right;
 }
 
-.info img {
+.info__img {
   width: 100%;
 }
 
-.more-inf {
+.info__more-inf {
   font-family: fantasy, cursive;
-}
-
-@media (max-width: 768px) {
-
-.info { 
-  text-align: center;
-}
-
 }
 
 .main-wrap {
@@ -185,4 +177,12 @@ button {
 
 .hidden-label {
   display: none;
+}
+
+@media (max-width: 768px) {
+
+.info { 
+  text-align: center;
+}
+
 }
