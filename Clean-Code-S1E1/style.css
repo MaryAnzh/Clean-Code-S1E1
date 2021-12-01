@@ -94,7 +94,7 @@ button {
 }
 
 .input-text,
-.main__input-new-task,s {
+.main__input-new-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -182,7 +182,7 @@ button {
 
 @media (max-width: 768px) {
 
-.info { 
+.info {
   text-align: center;
 }
 
