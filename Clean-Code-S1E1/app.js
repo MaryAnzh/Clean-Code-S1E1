@@ -49,6 +49,7 @@ var createNewTaskElement = function (taskString) {
     deleteButton.className = "main__button-delete";
     deleteButtonImg.src = './remove.svg';
     deleteButtonImg.className = 'delete-img';
+    deleteButtonImg.setAttribute('alt', 'Delet');
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -201,4 +202,5 @@ for (var i = 0; i < completedTasksHolder.children.length; i++) {
 //Change edit to save when you are in edit mode.
 console.log(`
 Самооценка.
+45 из 45
 `);
